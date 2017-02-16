@@ -1,0 +1,6 @@
+EXPOSE 9000
+
+#RUN adduser -D -u 1000 -s /sbin/nologin grimlock
+
+RUN useradd --shell /sbin/nologin --create-home --uid 1000 grimlock
+
